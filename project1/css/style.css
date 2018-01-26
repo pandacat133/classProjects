@@ -1,0 +1,68 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+
+.titlesection{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.navigation{
+    text-align: right;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+body{
+    background: url("../images/cute-kitten-13.jpg") no-repeat;
+    background-size: cover;
+}
+
+.mybtn{
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    height: 50px;
+}
+
+h1{
+    font-size: 50px;
+    margin: 10px;
+}
+
+.headerbar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+}
+
+.spacerTop{
+    padding: 50px;
+}
+
+.spacerBottom{
+    padding-bottom: 50px;
+}
+
+.spacerLeft{
+    padding-left: 50px;
+}
+
+.spacerRight{
+    padding-right: 50px;
+}
+
+.spacerAll{
+    padding: 50px;
+}
