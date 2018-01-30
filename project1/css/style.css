@@ -1,9 +1,52 @@
-.container{
+/*ENTIRE WEBSITE*/
+
+body,html{
+    padding: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
 }
 
-.titlesection{
+body{
+    background-color: #2a2a2a;
+}
+
+h1{
+    font-size: 50px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h2{
+    font-size: 40px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+h3{
+    font-size: 30px;
+    margin: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.container{
+    background-color: #FFFFFF;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.headerBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    text-align: right;
+}
+
+.titleSection{
     text-align: center;
     display: flex;
     justify-content: center;
@@ -15,36 +58,16 @@
     font-family: 'Gloria Hallelujah', cursive;
 }
 
-.navigation{
-    text-align: right;
-}
-
 .subtitle{
     text-align: center;
 }
 
-body{
-    background: url("../images/cute-kitten-13.jpg") no-repeat;
-    background-size: cover;
-}
-
-.mybtn{
-    background-color: white;
+.myButton{
+    background-color: #000000;
     text-align: center;
+    color: #ffffff;
     width: 150px;
     height: 50px;
-}
-
-h1{
-    font-size: 50px;
-    margin: 10px;
-}
-
-.headerbar{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
 }
 
 .spacerTop{
@@ -65,4 +88,44 @@ h1{
 
 .spacerAll{
     padding: 50px;
+}
+
+/*HOME PAGE ONLY*/
+
+/*ABOUT PAGE ONLY*/
+
+.headPhoto{
+    width: 100%;
+    height: 450px;
+    background: url("../images/lego.png") no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+}
+
+.bottom{
+    display: flex;
+}
+
+.bLeft{
+    background-color: #dadfea;
+    width: calc(33% - 20px);
+    padding: 20px;
+}
+
+.myLink{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.myLink img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+.bRight{
+    display: flex;
+    flex-direction: column;
+    width: calc(66% - 20px);
+    margin-left: 20px;
 }
