@@ -1,32 +1,45 @@
 /*ENTIRE WEBSITE*/
 
-body,html{
-    padding: 0;
+body,html, h1, h2, h3, h4, p, ol, ul, li, a{
     margin: 0;
-    width: 100%;
-    height: 100%;
+    padding: 0;
+    border: 0;
+    width:100%;
+    height:100%;
 }
 
 body{
     background-color: #2a2a2a;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1{
     font-size: 50px;
-    margin: 5px;
-    font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 10px;
+    font-family: 'Asul', sans-serif;
 }
 
 h2{
     font-size: 40px;
-    margin: 5px;
-    font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 10px;
+    font-family: 'Asul', sans-serif;
 }
 
 h3{
     font-size: 30px;
-    margin: 5px;
-    font-family: 'Gloria Hallelujah', cursive;
+    margin-bottom: 10px;
+    font-family: 'Asul', sans-serif;
+}
+
+h4{
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: 'Asul', sans-serif;
+}
+
+p{
+    font-size: 15px;
+    margin-bottom: 10px;
 }
 
 .container{
@@ -43,7 +56,17 @@ h3{
 }
 
 .navigation{
-    text-align: right;
+    font-family: 'Asul', sans-serif;
+    background-color: #CCCCCC;
+    padding: 10px;
+}
+
+.navigation a{
+    display: block flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    color: #000000;
+    margin: 0 15px 0 15px;
 }
 
 .titleSection{
@@ -55,7 +78,7 @@ h3{
 }
 
 .title{
-    font-family: 'Gloria Hallelujah', cursive;
+    margin: 0 0 20px 0;
 }
 
 .subtitle{
@@ -90,42 +113,62 @@ h3{
     padding: 50px;
 }
 
-/*HOME PAGE ONLY*/
+p.normal{
+    font-style: normal;
+}
+
+p.italic{
+    font-style: italic;
+}
+
+p.bold{
+    font-style: oblique;
+}
 
 /*ABOUT PAGE ONLY*/
 
-.headPhoto{
+.aBottom{
+    width: 80%;
+}
+
+.aBottom p{
+    margin: 20px;
+}
+
+/*CONTACT FORM ONLY*/
+
+.contactForm{
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 450px;
-    background: url("../images/lego.png") no-repeat;
-    background-size: cover;
-    margin-bottom: 20px;
 }
 
-.bottom{
-    display: flex;
-}
-
-.bLeft{
-    background-color: #dadfea;
-    width: calc(33% - 20px);
-    padding: 20px;
-}
-
-.myLink{
-    display: flex;
-    align-items: center;
-    margin: 10px 10px;
-}
-
-.myLink img{
-    height: 60px;
-    margin-right: 10px;
-}
-
-.bRight{
+.formInput{
     display: flex;
     flex-direction: column;
-    width: calc(66% - 20px);
-    margin-left: 20px;
+    margin: 10px;
+}
+
+/*SPECIFIC TO BIRTHDAY PARTIES PAGE*/
+
+.rightContainer span{
+    margin-bottom: 10px;
+    color: #708090;
+}
+.rightContainer{
+    margin-left: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.leftContainer{
+    position: fixed;
+    background-color: #CCCCCC;
+    height: 100%;
+    width: 200px;
+    padding: 10px;
+}
+
+.birthdayPartiesList{
+    margin: 20px 0 20px 40px;
 }

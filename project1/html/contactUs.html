@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css?family=Asul" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <div class="container">
-        <div class="headerbar">
-            <div class="logobox">
+        <div class="headerBar">
+            <div class="logoBox">
                 <img src="../images/bricks-and-minifigs-logo.png">
             </div>
 
@@ -20,9 +21,49 @@
                 <a href="contactUs.html">CONTACT US</a>
             </div>
         </div>
-    </div>
 
-    <h1>CONTACT US</h1>
-    <p>This is a contact page.</p>
+        <div class="titleSection">
+            <div class="title">
+                <h1>CONTACT US</h1>
+            </div>
+
+            <div class="subtitle">
+                <h2>Questions? Complaints? Reviews?</h2>
+            </div>
+        </div>
+
+        <div class="contactForm">
+            <form method="post">
+                <div class="formInput">
+                    <label for="firstNameID">First Name:</label>
+                    <input id='firstNameID' name='firstName' type="text">
+                </div>
+
+                <div class="formInput">
+                    <label for="lastNameID">Last Name:</label>
+                    <input id='lastNameID' name='lastName' type="text">
+                </div>
+
+                <div class="formInput">
+                    <label for="emailID">Email:</label>
+                    <input id='emailID' name='email' type="email">
+                </div>
+
+                <div class="formInput">
+                    <label for="feedbackID">Feedback:</label>
+                    <textarea id="feedbackID" cols="30" rows="5" name="feedback"></textarea>
+                </div>
+
+                <div class="formInput">
+                    <label for="checkBoxID">I would like to receive promotional emails.</label>
+                    <input id='checkBoxID' name='checkBox' type="checkbox">
+                </div>
+
+                <div class="formInput">
+                    <input id='submit' type="submit">
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
