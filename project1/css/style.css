@@ -4,171 +4,228 @@ body,html, h1, h2, h3, h4, p, ol, ul, li, a{
     margin: 0;
     padding: 0;
     border: 0;
-    width:100%;
-    height:100%;
+    font-size: 100%;
+    font: inherit;
 }
 
 body{
-    background-color: #2a2a2a;
+    padding: 0 0 0 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #333333;
 }
 
 h1{
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 40px;
+    color: #7facaa;
+    margin: 15px 0 15px 0;
+    text-align: center;
     font-family: 'Asul', sans-serif;
+    font-weight: bold;
 }
 
 h2{
-    font-size: 40px;
-    margin-bottom: 10px;
+    font-size: 30px;
+    color: #7facaa;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 3px;
     font-family: 'Asul', sans-serif;
+    font-weight: bold;
 }
 
 h3{
-    font-size: 30px;
-    margin-bottom: 10px;
     font-family: 'Asul', sans-serif;
-}
-
-h4{
     font-size: 20px;
-    margin-bottom: 10px;
-    font-family: 'Asul', sans-serif;
+    margin: 0;
+    background-color: #333333;
+    padding: 5px 0 5px 15px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-weight: bold;
 }
 
 p{
-    font-size: 15px;
-    margin-bottom: 10px;
+    margin: 10px 0 10px 0;
 }
 
-.container{
-    background-color: #FFFFFF;
+a{
+    text-decoration: none;
+}
+
+ul{
+    padding: 0 0 0 50px;
+}
+
+ol{
+    padding: 0 0 0 50px;
+}
+
+.header{
+    padding: 10px;
+    background-color: #595959;
+}
+
+.header a{
+    color: #FFFFFF;
+}
+
+.header img{
+    display: block;
+    margin: 0 auto 15px auto;
+    height: 100px;
+}
+
+.main{
+    background: #f5f5f5;
     width: 80%;
-    margin: 50px auto;
+    margin: 0 auto;
+    padding: 20px 40px;
+}
+
+    /*SPECIFIC TO NAV CLASS ON ENTIRE WEBSITE*/
+    .nav{
+        display: flex;
+        justify-content: space-evenly;
+        padding-left: 0;
+        margin: 5px 0 20px 0;
+        text-align: center;
+    }
+
+    .nav a:hover{
+        text-decoration: underline;
+    }
+
+    .nav a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .nav li{
+        display: inline;
+    }
+
+/*SPECIFIC TO LEGAL PAGE*/
+
+.disclaimer{
+    background-color: #333333;
+    color: #FFFFFF;
     padding: 20px;
 }
 
-.headerBar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/*SPECIFIC TO HOME PAGE*/
+
+.featuredImage{
+    margin: auto;
+    background: url("../images/homeLego.jpg") no-repeat;
+    width: 680px;
+    height: 510px;
 }
 
-.navigation{
-    font-family: 'Asul', sans-serif;
-    background-color: #CCCCCC;
-    padding: 10px;
+.featuredImage a:hover{
+    text-decoration: underline;
 }
 
-.navigation a{
-    display: block flex;
-    flex-wrap: wrap;
+.featuredImage a{
+    color: #FFFFFF;
     text-decoration: none;
-    color: #000000;
-    margin: 0 15px 0 15px;
 }
 
-.titleSection{
-    text-align: center;
+/*SPECIFIC TO PACKAGES PAGE*/
+
+.pContainer{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
 }
 
-.title{
-    margin: 0 0 20px 0;
+.left{
+    width: 75%;
 }
 
-.subtitle{
-    text-align: center;
+.right{
+    width: 25%;
 }
 
-.myButton{
-    background-color: #000000;
-    text-align: center;
-    color: #ffffff;
-    width: 150px;
-    height: 50px;
+.packages{
+    list-style-type: none;
+    padding: 0;
 }
 
-.spacerTop{
-    padding: 50px;
+.packages li{
+    margin: 10px;
+    border: 1px solid #000000;
+    padding-left: 15px;
+    background-color: #FFFFFF;
 }
 
-.spacerBottom{
-    padding-bottom: 50px;
+.packages img{
+    float: left;
+    width: 75px;
+    padding: 6px 15px 0 0;
 }
 
-.spacerLeft{
-    padding-left: 50px;
+.packages h2{
+    border-bottom: 0;
 }
 
-.spacerRight{
-    padding-right: 50px;
+.prices{
+    list-style-type: none;
+    padding: 0;
 }
 
-.spacerAll{
-    padding: 50px;
+.prices li{
+    margin: 10px;
+    border: 1px solid #000000;
+    padding: 15px;
+    background-color: #FFFFFF;
 }
 
-p.normal{
-    font-style: normal;
+.prices p{
+    font-family: 'Asul', sans-serif;
+    color: #7facaa;
+    font-size: 31px;
 }
 
-p.italic{
-    font-style: italic;
-}
+/*SPECIFIC TO CONTACT US PAGE*/
 
-p.bold{
-    font-style: oblique;
-}
-
-/*ABOUT PAGE ONLY*/
-
-.aBottom{
-    width: 80%;
-}
-
-.aBottom p{
-    margin: 20px;
-}
-
-/*CONTACT FORM ONLY*/
-
-.contactForm{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.formInput{
+.formContainer{
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
 
-/*SPECIFIC TO BIRTHDAY PARTIES PAGE*/
-
-.rightContainer span{
-    margin-bottom: 10px;
-    color: #708090;
+input{
+    width: 90%;
+    margin-bottom: 25px;
 }
-.rightContainer{
-    margin-left: 250px;
+
+input[type=submit]{
+    width: 120px;
+    font-size: 30px;
+}
+
+input[type=text]{
+    border: 2px solid #7FACAA;
+    font-size: 20px;
+    padding: 7px;
+}
+
+textarea{
+    width: 90%;
+    height: 500px;
+    padding: 7px;
+    border: 2px solid #7FACAA;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.checkBox{
     display: flex;
-    flex-wrap: wrap;
 }
 
-.leftContainer{
-    position: fixed;
-    background-color: #CCCCCC;
-    height: 100%;
-    width: 200px;
-    padding: 10px;
+.checkBox label{
+    width: 130px;
 }
 
-.birthdayPartiesList{
-    margin: 20px 0 20px 40px;
+.textInput label{
+    display: block;
+    margin-bottom: 10px;
 }

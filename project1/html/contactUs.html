@@ -7,60 +7,50 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="headerBar">
-            <div class="logoBox">
-                <img src="../images/bricks-and-minifigs-logo.png">
-            </div>
+    <div class="header">
+        <img src="../images/bricks-and-minifigs-logo.png">
 
-            <div class="navigation">
-                <a href="events.html">EVENTS</a>
-                <a href="birthdayParties.html">BIRTHDAY PARTIES</a>
-                <a href="home.html">HOME</a>
-                <a href="about.html">ABOUT</a>
-                <a href="contactUs.html">CONTACT US</a>
-            </div>
-        </div>
+        <ul class="nav">
+            <li><a href="legal.html">LEGAL</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contactUs.html">CONTACT US</a></li>
+        </ul>
+    </div>
 
-        <div class="titleSection">
-            <div class="title">
-                <h1>CONTACT US</h1>
-            </div>
+    <div class="main">
+        <h1>Contact Us</h1>
 
-            <div class="subtitle">
-                <h2>Questions? Complaints? Reviews?</h2>
-            </div>
-        </div>
-
-        <div class="contactForm">
-            <form method="post">
-                <div class="formInput">
-                    <label for="firstNameID">First Name:</label>
-                    <input id='firstNameID' name='firstName' type="text">
+        <div class="formContainer">
+            <form class="form">
+                <div class="textInput">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName">
                 </div>
 
-                <div class="formInput">
-                    <label for="lastNameID">Last Name:</label>
-                    <input id='lastNameID' name='lastName' type="text">
+                <div class="textInput">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName">
                 </div>
 
-                <div class="formInput">
-                    <label for="emailID">Email:</label>
-                    <input id='emailID' name='email' type="email">
+                <div class="textInput">
+                    <label for="yourEmail">Your Email</label>
+                    <input type="email" id="yourEmail">
                 </div>
 
-                <div class="formInput">
-                    <label for="feedbackID">Feedback:</label>
-                    <textarea id="feedbackID" cols="30" rows="5" name="feedback"></textarea>
+                <div class="textInput">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback"></textarea>
                 </div>
 
-                <div class="formInput">
-                    <label for="checkBoxID">I would like to receive promotional emails.</label>
-                    <input id='checkBoxID' name='checkBox' type="checkbox">
+                <div class="checkBox">
+                    <label for="newsLetter">Get Newsletter?</label>
+                    <input type="radio" id="newsLetter">
                 </div>
 
-                <div class="formInput">
-                    <input id='submit' type="submit">
+                <div>
+                    <input type="submit" value="Click to Submit">
                 </div>
             </form>
         </div>
