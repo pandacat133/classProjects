@@ -1,3 +1,14 @@
+@myBlue: #00A9FF;
+@myGradient: linear-gradient(45deg, rgba(119,81,254,1) 0%,rgba(0,169,255,1) 100%);
+
+.blueBtn{
+  background-color: @myBlue;
+  padding: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
 body, html{
   padding: 0;
   margin: 0;
@@ -6,15 +17,17 @@ body, html{
 }
 
 body{
-  background: linear-gradient(45deg, rgba(119,81,254,1) 0%,rgba(0,169,255,1) 100%);
+  background: @myGradient;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Open Sans', sans-serif;
 }
+
 .container {
   width: 80%;
   height: 90%;
-  background-color: gray;
+  background-color: #DADFEA;
   border-radius: 4px;
 
   .headbar {
@@ -23,16 +36,41 @@ body{
     background-color: #FFFFFF;
     width: 100%;
     height: 50px;
-    .left {
+    align-items: center;
+    border-radius: 4px 4px 0 0;
 
+    .left {
+      padding-left: 20px;
     }
     .right {
-
+      padding-right: 20px;
     }
   }
+
   .main{
-    width: 85%;
+    padding: 20px;
     height: auto;
     margin: 25px auto;
+
+    .header{
+      display: flex;
+      justify-content: space-between;
+    }
+    .list{
+      margin-top: 30px;
+
+      .toDoList{
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        height: 45px;
+        align-items: center;
+
+        .listLabel{
+          padding-left: 20px;
+
+        }
+      }
+    }
   }
 }
