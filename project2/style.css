@@ -1,0 +1,116 @@
+.blueBtn {
+  background-color: #00A9FF;
+  padding: 12px;
+  color: #FFFFFF;
+  text-decoration: none;
+  border-radius: 3px;
+}
+.itemComplete {
+  color: #DADFEA;
+}
+body,
+html {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: linear-gradient(45deg, #7751fe 0%, #00a9ff 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  width: 80%;
+  height: 90%;
+  background-color: #DADFEA;
+  border-radius: 4px;
+  padding: 0;
+}
+.container .headbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  border-radius: 4px 4px 0 0;
+}
+.container .headbar .left {
+  padding-left: 20px;
+}
+.container .headbar .right {
+  padding-right: 20px;
+}
+.container .main {
+  padding: 20px;
+  height: auto;
+  margin: 25px auto;
+}
+.container .main .header {
+  display: flex;
+  justify-content: space-between;
+}
+.container .main .header .headleft {
+  font-family: 'Amatic SC', cursive;
+  font-size: 33px;
+  font-weight: bold;
+}
+.container .main #list {
+  margin-top: 30px;
+}
+.container .main #list .toDoList {
+  background-color: #FFFFFF;
+  width: 100%;
+  margin-bottom: 8px;
+  height: auto;
+  padding: 5px 0;
+  border-radius: 3px;
+}
+.container .main #list .toDoList .top {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.container .main #list .toDoList .top .listLabel {
+  font-size: 18px;
+  font-weight: bold;
+}
+.container .main #list .toDoList .top .iconsTop {
+  display: flex;
+}
+.container .main #list .toDoList .top .iconsTop .fa-plus {
+  color: #00A9FF;
+  cursor: pointer;
+}
+.container .main #list .toDoList .top .iconsTop .deleteList {
+  padding-left: 10px;
+}
+.container .main #list .toDoList .top .iconsTop .deleteList .fa-trash-alt {
+  color: #7751FE;
+  cursor: pointer;
+}
+.container .main #list .toDoList .bottom {
+  background-color: #FFFFFF;
+}
+.container .main #list .toDoList .bottom .listItemContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+.container .main #list .toDoList .bottom .listItemContainer .bottomLeft {
+  display: flex;
+}
+.container .main #list .toDoList .bottom .listItemContainer .bottomLeft .square {
+  padding: 0 10px 0 10px;
+  cursor: pointer;
+}
+.container .main #list .toDoList .bottom .listItemContainer .iconsBottom {
+  display: flex;
+}
+.container .main #list .toDoList .bottom .listItemContainer .iconsBottom .fa-minus {
+  color: #00A9FF;
+  cursor: pointer;
+}
