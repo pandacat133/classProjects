@@ -1,8 +1,15 @@
-//use .localstorage to store to-do list locally
-
 $(document).ready(function() {
 
-    $('.blueBtn').on('click', function() {
+    // $('.save').on('click', function() {
+    //    let htmlContents = document.body.innerHTML;
+    //    localStorage.setItem('myToDoList', JSON.stringify(htmlContents));
+    // });
+    //
+    // $('.load').on('click', function() {
+    //     localStorage.getItem('myToDoList');
+    // });
+
+    $('.add').on('click', function() {
         $('.list')
             .append('<div class="toDoList">\n' +
                 '    <div class="top">\n' +
@@ -52,6 +59,7 @@ $(document).ready(function() {
         $(this).toggleClass('fa-check-square fa-square');
         $(this).closest('.listItemContainer').toggleClass('itemComplete');
     });
+
 
     $(document.body).on('click', '.fa-check-square', function() {
         $(this).toggleClass('fa-check-square fa-square');
