@@ -23,6 +23,7 @@ $(document).ready(function() {
                 '</div>');
     });
 
+
     $(document.body).on('click', '.fa-plus', function(){
         $(this).closest('.toDoList')
             .append('<div class="bottom">\n' +
@@ -46,16 +47,28 @@ $(document).ready(function() {
                 '    </div>');
     });
 
+
     $(document.body).on('click', '.fa-square', function() {
-        $(this).toggleClass('fa-square fa-check-square');
+        $(this).toggleClass('fa-check-square fa-square');
+        $(this).closest('.listItemContainer').toggleClass('itemComplete');
     });
 
+    $(document.body).on('click', '.fa-check-square', function() {
+        $(this).toggleClass('fa-check-square fa-square');
+        $(this).closest('.listItemContainer').toggleClass('itemComplete');
+    });
+
+
     $(document.body).on('click', '.fa-trash-alt', function() {
-        $(this).closest('.toDoList').remove();
+        $(this).closest('.toDoList').slideUp(200, function() {
+            $(this).closest('.toDoList').remove();
+        });
     });
 
 
     $(document.body).on('click', '.fa-minus', function() {
-        $(this).closest('.bottom').remove();
+        $(this).closest('.bottom').slideUp(200, function() {
+            $(this).closest('.bottom').remove();
+        });
     });
 });
