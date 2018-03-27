@@ -2,21 +2,6 @@
 
 $(document).ready(function() {
 
-    $('.fa-square').on('click', function() {
-        $(this).toggleClass('fa-square fa-check-square');
-        $(this).closest('.listItemContainer').toggleClass('itemComplete')
-    });
-
-
-    $('.fa-trash-alt').on('click', function() {
-        $(this).closest('.toDoList').remove();
-    });
-
-
-    $('.fa-minus').on('click', function() {
-        $(this).closest('.bottom').remove();
-    });
-
     $('.blueBtn').on('click', function() {
         $('.list')
             .append('<div class="toDoList">\n' +
@@ -38,7 +23,7 @@ $(document).ready(function() {
                 '</div>');
     });
 
-    $('.fa-plus').on('click', function(){
+    $(document.body).on('click', '.fa-plus', function(){
         $(this).closest('.toDoList')
             .append('<div class="bottom">\n' +
                 '        <div class="listItemContainer">\n' +
@@ -59,5 +44,18 @@ $(document).ready(function() {
                 '            </div>\n' +
                 '        </div>\n' +
                 '    </div>');
+    });
+
+    $(document.body).on('click', '.fa-square', function() {
+        $(this).toggleClass('fa-square fa-check-square');
+    });
+
+    $(document.body).on('click', '.fa-trash-alt', function() {
+        $(this).closest('.toDoList').remove();
+    });
+
+
+    $(document.body).on('click', '.fa-minus', function() {
+        $(this).closest('.bottom').remove();
     });
 });
