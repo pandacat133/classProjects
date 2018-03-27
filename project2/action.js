@@ -1,16 +1,18 @@
 $(document).ready(function() {
 
-    // $('.save').on('click', function() {
-    //    let htmlContents = document.body.innerHTML;
-    //    localStorage.setItem('myToDoList', JSON.stringify(htmlContents));
-    // });
-    //
-    // $('.load').on('click', function() {
-    //     localStorage.getItem('myToDoList');
-    // });
+    $('.save').on('click', function() {
+       let htmlContents = document.getElementById('list').innerHTML;
+       localStorage.setItem('myToDoList', JSON.stringify(htmlContents));
+    });
+
+    $('.load').on('click', function() {
+        let savedHtml = localStorage.getItem('myToDoList');
+        let parsedHtml = JSON.parse(savedHtml);
+        $('#list').html(parsedHtml);
+    });
 
     $('.add').on('click', function() {
-        $('.list')
+        $('#list')
             .append('<div class="toDoList">\n' +
                 '    <div class="top">\n' +
                 '        <div class="editbox" contenteditable="true">\n' +
