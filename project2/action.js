@@ -1,3 +1,7 @@
+//could have "enter" key make it so that you go to the next to-do list item
+//"load list" button is not intuitive
+//instead of "add list", use "create new list" verbiage
+
 $(document).ready(function() {
 
     $('.save').on('click', function() {
