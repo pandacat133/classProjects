@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+}
+.card .left .pHeader {
+  padding: 10px;
+}
+.card .right {
+  display: flex;
+}
+.card .right .column {
+  border: 1px solid #DADFEA;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .right .column .cHeader {
+  padding-bottom: 5px;
+}
+.card .right .column .holeInput {
+  width: 25px;
+}
+/*# sourceMappingURL=style.css.map */
