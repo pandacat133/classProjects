@@ -1,5 +1,6 @@
 //use content editable true so you can make the player names change-able
 //put a remove button next to each player that will remove every input that ties to that player
+//let them select "champion", "pro", "men", "women" and then populate off of that
 
 let numPlayers = 4;
 let course;
@@ -13,7 +14,13 @@ function loadDoc() {
             course = JSON.parse(this.responseText);
             console.log(course);
 
-            createCard();
+
+            let selTees = course.holes[0].tees;
+            for(let i = 0; i < selTees.length; i++) {
+                $('#teeSelect').append('<option value="'+ i +'">'+ selTees[i] +'</option>');
+            }
+
+            //createCard();
         }
     };
     xhttp.open("GET", "holes.txt", true);
