@@ -1,6 +1,4 @@
 //use content editable true so you can make the player names change-able
-//put a remove button next to each player that will remove every input that ties to that player
-//let them select "champion", "pro", "men", "women" and then populate off of that
 
 let numPlayers = 4;
 let allCourses;
@@ -75,12 +73,33 @@ function setTee(teeIndex) {
 }
 
 function fillCard() {
+    $('.left').append('<div class="label">\n' +
+        '                Hole:\n' +
+        '            </div>\n' +
+        '            <div class="label">\n' +
+        '                Yards:\n' +
+        '            </div>\n' +
+        '            <div class="label">\n' +
+        '                Handicap:\n' +
+        '            </div>\n' +
+        '            <div class="horizontalSpacer">\n' +
+        '                Par:\n' +
+        '            </div>');
+
     for(let p = 1; p <= numPlayers; p++) {
-        $('.left').append('<div class="playerLabel playa'+ p +'"><span onclick="deletePlayer('+ p +')" class="fa fa-trash"></span>Player'+ p +'</div>');
+        $('.left').append('<div class="playerLabel playa'+ p +'">' +
+                          '<span onclick="deletePlayer('+ p +')" class="fa fa-trash"></span>' +
+                          '<span contenteditable="true">Player'+ p +'</span>' +
+                          '</div>');
+
+        $('.totalContainer').append('<div class="playerTotal totalP'+ p +' playa'+ p +'">0</div>');
 
         let myHoles = selectCourse.data.holes;
         for(let h = 0; h < myHoles.length; h++) {
-            $('#c' + h).append('<input onkeyup="addScore(p)" class="holeInput playa'+ p +'" id="p'+ p +' h'+ h +'" type="text">');
+            $('#c' + h).append('<input onkeyup="addScore('+ p +')" ' +
+                               'class="holeInput playa'+ p +'" ' +
+                               'id="p'+ p +'h'+ h +'" ' +
+                               'type="text">');
         }
     }
 }
@@ -88,7 +107,7 @@ function fillCard() {
 function addScore(myValue) {
     let tempScore = 0;
     for(let i = 1; i <= numberOfHoles; i++) {
-        let inValue = Number($('#p' + myValue + 'h' + i).val());
+        let inValue = Number($('#p' + myValue + 'h' + (i-1)).val());
         tempScore += inValue;
     }
 
