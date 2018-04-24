@@ -21,8 +21,6 @@ function loadDoc() {
             for(let i = 0; i < selCourses.length; i++) {
                 $('.coursesDropdown').append('<option value="'+ selCourses[i].id +'">'+ selCourses[i].name +'</option>');
             }
-
-            //createCard();
         }
     };
     xhttp.open("GET", "https://uxcobra.com/golfapi/courses.txt", true);
@@ -67,7 +65,7 @@ function setTee(teeIndex) {
             '                    </div>\n' +
             '                    <div class="hcp">\n' + myTee.hcp +
             '                    </div>\n' +
-            '                    <div class="par">\n' + myTee.par +
+            '                    <div class="par horizontalSpacer">\n' + myTee.par +
             '                    </div>\n' +
             '                </div>\n' +
             '            </div>');
@@ -77,22 +75,12 @@ function setTee(teeIndex) {
 }
 
 function fillCard() {
-    // for(let p = 1; p <= numPlayers; p++) {
-    //     $('.left').append('<div class="playerLabel">\n' +
-    //         '                Player\n' + p +
-    //         '            </div>');
-    //
-    //     for(let h = 0; h < course.holes.length; h++) {
-    //         $('#col'+ h).append('<input class="holeInput" id="p'+ p +' h'+ h +'" type="text">');
-    //     }
-    // }
-
     for(let p = 1; p <= numPlayers; p++) {
-        $('.left').append('<div class="playerLabel"><span class="fa fa-trash"></span>Player'+ p +'</div>');
+        $('.left').append('<div class="playerLabel playa'+ p +'"><span onclick="deletePlayer('+ p +')" class="fa fa-trash"></span>Player'+ p +'</div>');
 
         let myHoles = selectCourse.data.holes;
         for(let h = 0; h < myHoles.length; h++) {
-            $('#c' + h).append('<input onkeyup="addScore(p)" class="holeInput" id="p'+ p +' h'+ h +'" type="text">');
+            $('#c' + h).append('<input onkeyup="addScore(p)" class="holeInput playa'+ p +'" id="p'+ p +' h'+ h +'" type="text">');
         }
     }
 }
@@ -108,5 +96,5 @@ function addScore(myValue) {
 }
 
 function deletePlayer(incPlayer) {
-    
+    $('.playa' + incPlayer).remove();
 }

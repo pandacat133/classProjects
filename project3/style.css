@@ -6,20 +6,23 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-size: 11px;
+  font-size: 13px;
 }
 .card .left .label {
   padding-bottom: 10px;
 }
+.card .left .horizontalSpacer {
+  padding-bottom: 30px;
+}
 .card .left .playerLabel {
-  padding-bottom: 10px;
+  padding: 5px 0;
   display: flex;
+  margin-bottom: 3px;
 }
 .card .left .playerLabel .fa-trash {
   color: #EA5465;
   font-size: 13px;
-  padding: 3px;
+  padding-right: 3px;
 }
 .card .right {
   display: flex;
@@ -30,7 +33,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 11px;
+  font-size: 13px;
   margin-left: 3px;
 }
 .card .right .column .cHeader {
@@ -47,15 +50,15 @@
 .card .right .column .cHeader .hcp {
   padding-bottom: 10px;
 }
-.card .right .column .cHeader .par {
-  padding-bottom: 10px;
+.card .right .column .cHeader .horizontalSpacer {
+  padding-bottom: 30px;
 }
 .card .right .column .holeInput {
   width: 25px;
   margin-bottom: 3px;
   text-align: center;
   font-size: 11px;
-  padding: 3px;
+  padding: 4px 3px;
 }
 .card .totalContainer {
   border: 1px solid #DADFEA;
@@ -63,7 +66,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 11px;
+  font-size: 13px;
 }
 .card .totalContainer .totalLabel {
   padding-bottom: 10px;
