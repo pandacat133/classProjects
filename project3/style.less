@@ -2,8 +2,26 @@
   display: flex;
 
   .left{
-    .pHeader{
-      padding: 10px;
+    border: 1px solid #DADFEA;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+
+    .label{
+      padding-bottom: 10px;
+    }
+
+    .playerLabel{
+      padding-bottom: 10px;
+      display: flex;
+
+      .fa-trash{
+        color: #EA5465;
+        font-size: 13px;
+        padding: 3px;
+      }
     }
 
   }
@@ -16,14 +34,51 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-size: 11px;
+      margin-left: 3px;
 
       .cHeader{
-        padding-bottom: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .holes {
+          padding-bottom: 10px;
+        }
+        .yards {
+          padding-bottom: 10px;
+        }
+        .hcp {
+          padding-bottom: 10px;
+        }
+        .par {
+          padding-bottom: 10px;
+        }
       }
 
       .holeInput{
         width: 25px;
+        margin-bottom: 3px;
+        text-align: center;
+        font-size: 11px;
+        padding: 3px;
       }
+    }
+  }
+  .totalContainer{
+    border: 1px solid #DADFEA;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 11px;
+
+    .totalLabel{
+      padding-bottom: 10px;
+    }
+
+    .playerTotal{
+      padding-bottom: 10px;
     }
   }
 }

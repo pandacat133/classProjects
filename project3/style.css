@@ -1,8 +1,25 @@
 .card {
   display: flex;
 }
-.card .left .pHeader {
+.card .left {
+  border: 1px solid #DADFEA;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+}
+.card .left .label {
+  padding-bottom: 10px;
+}
+.card .left .playerLabel {
+  padding-bottom: 10px;
+  display: flex;
+}
+.card .left .playerLabel .fa-trash {
+  color: #EA5465;
+  font-size: 13px;
+  padding: 3px;
 }
 .card .right {
   display: flex;
@@ -13,11 +30,45 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 11px;
+  margin-left: 3px;
 }
 .card .right .column .cHeader {
-  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .right .column .cHeader .holes {
+  padding-bottom: 10px;
+}
+.card .right .column .cHeader .yards {
+  padding-bottom: 10px;
+}
+.card .right .column .cHeader .hcp {
+  padding-bottom: 10px;
+}
+.card .right .column .cHeader .par {
+  padding-bottom: 10px;
 }
 .card .right .column .holeInput {
   width: 25px;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 11px;
+  padding: 3px;
+}
+.card .totalContainer {
+  border: 1px solid #DADFEA;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 11px;
+}
+.card .totalContainer .totalLabel {
+  padding-bottom: 10px;
+}
+.card .totalContainer .playerTotal {
+  padding-bottom: 10px;
 }
 /*# sourceMappingURL=style.css.map */

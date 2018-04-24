@@ -10,19 +10,45 @@
 
 <body>
 
-    <select id="teeSelect">
-
-    </select>
+    <select onchange="getCourse(this.value)" class="coursesDropdown"></select>
+    <select onchange="setTee(this.value)" class="teeDropdown"></select>
 
     <div class="card">
+
         <div class="left">
-            <div class="pHeader">
-                Players
+            <div class="label">
+                Hole:
+            </div>
+            <div class="label">
+                Yards:
+            </div>
+            <div class="label">
+                Handicap:
+            </div>
+            <div class="label">
+                Par:
             </div>
 
         </div>
+
         <div class="right">
 
+
+        </div>
+
+        <div class="totalContainer">
+
+            <div class="totalLabel">Total</div>
+
+            <div class="playerTotal totalP1">
+                10
+            </div>
+            <div class="playerTotal totalP2">
+                10
+            </div>
+            <div class="playerTotal totalP3">
+                10
+            </div>
         </div>
     </div>
 
