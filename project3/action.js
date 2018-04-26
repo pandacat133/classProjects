@@ -1,5 +1,3 @@
-//use content editable true so you can make the player names change-able
-
 let numPlayers = 4;
 let allCourses;
 let selectCourse;
