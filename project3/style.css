@@ -62,17 +62,23 @@
 }
 .card .totalContainer {
   border: 1px solid #DADFEA;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  padding: 90px 10px 10px 10px;
   align-items: center;
   font-size: 13px;
 }
-.card .totalContainer .totalLabel {
-  padding-top: 102px;
-  margin-bottom: 3px;
+.card .totalContainer .totals {
+  display: flex;
+  margin-bottom: 10px;
 }
-.card .totalContainer .playerTotal {
+.card .totalContainer .totals .totalsLabel {
+  margin-right: 10px;
+  text-align: center;
+}
+.card .totalContainer .pTotalContainer {
+  display: flex;
+  flex-direction: column;
+}
+.card .totalContainer .pTotalContainer .playerTotal {
   padding: 5px 0;
   margin-bottom: 3px;
 }

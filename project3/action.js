@@ -90,7 +90,7 @@ function fillCard() {
                           '<span contenteditable="true">Player'+ p +'</span>' +
                           '</div>');
 
-        $('.totalContainer').append('<div class="playerTotal totalP'+ p +' playa'+ p +'">0</div>');
+        $('.pTotalContainer').append('<div class="playerTotal totalP'+ p +' playa'+ p +'">0</div>');
 
         let myHoles = selectCourse.data.holes;
         for(let h = 0; h < myHoles.length; h++) {

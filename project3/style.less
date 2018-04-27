@@ -71,20 +71,28 @@
   }
   .totalContainer{
     border: 1px solid #DADFEA;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
+    padding: 90px 10px 10px 10px;
     align-items: center;
     font-size: 13px;
 
-    .totalLabel{
-      padding-top: 102px;
-      margin-bottom: 3px;
+    .totals {
+      display: flex;
+      margin-bottom: 10px;
+
+      .totalsLabel{
+        margin-right: 10px;
+        text-align: center;
+      }
     }
 
-    .playerTotal{
-      padding: 5px 0;
-      margin-bottom: 3px;
+    .pTotalContainer {
+      display: flex;
+      flex-direction: column;
+
+      .playerTotal {
+        padding: 5px 0;
+        margin-bottom: 3px;
+      }
     }
   }
 }
