@@ -1,0 +1,29 @@
+.scorecard{
+  display: flex;
+}
+
+.container{
+  border: 1px solid #DADFEA;
+  padding: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.hole{
+  border: 1px solid #DADFEA;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.player{
+  display: flex;
+}

@@ -1,0 +1,27 @@
+<div>
+  <mat-list>
+    <mat-list-item class="character" *ngIf="foxHollow" (click)="setActiveCourse(foxHollow)">
+      <h3 mat-line>{{foxHollow.name}}</h3>
+      <div mat-line class="height">
+        <span>{{foxHollow.city}}</span>
+        <span> -- Holes: {{foxHollow.holeCount}}</span>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="character" *ngIf="spanishOaks" (click)="setActiveCourse(spanishOaks)">
+      <h3 mat-line>{{spanishOaks.name}}</h3>
+      <div mat-line class="height">
+        <span>{{spanishOaks.city}}</span>
+        <span> -- Holes: {{spanishOaks.holeCount}}</span>
+      </div>
+    </mat-list-item>
+
+    <mat-list-item class="character" *ngIf="thanksgivingPoint" (click)="setActiveCourse(thanksgivingPoint)">
+      <h3 mat-line>{{thanksgivingPoint.name}}</h3>
+      <div mat-line class="height">
+        <span>{{thanksgivingPoint.city}}</span>
+        <span> -- Holes: {{thanksgivingPoint.holeCount}}</span>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</div>
