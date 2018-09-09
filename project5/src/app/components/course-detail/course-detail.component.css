@@ -4,22 +4,22 @@
 
 .container{
   border: 1px solid #DADFEA;
-  padding: 10px;
-  margin-right: 10px;
+  padding: 5px;
+  margin-right: 5px;
   display: flex;
   flex-direction: column;
 }
 
 .item {
-  padding: 10px;
+  padding: 5px;
   text-align: center;
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
 
 .hole{
   border: 1px solid #DADFEA;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
 }
