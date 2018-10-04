@@ -1,0 +1,29 @@
+html
+    head
+        style
+            include style.css
+    body
+        a(href="/userTable") Go Back
+        table
+            tr
+                th User ID
+                th First Name
+                th Last Name
+                th Email Address
+                th Home Address
+                th Age
+            tr
+                form(action=`/editUser/${user.userId}` method="post")
+                    td
+                        input(placeholder="UserID" type="text" name="userId" value=user.userId)
+                    td
+                        input(placeholder="First Name" type="text" name="firstName" value=user.firstName)
+                    td
+                        input(placeholder="Last Name" type="text" name="lastName" value=user.lastName)
+                    td
+                        input(placeholder="Email Address" type="text" name="emailAddress" value=user.emailAddress)
+                    td
+                        input(placeholder="Home Address" type="text" name="address" value=user.address)
+                    td
+                        input(placeholder="Age" type="text" name="age" value=user.age)
+                    input(class="submitButton" type="submit" value="Save User")
