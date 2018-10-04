@@ -4,19 +4,19 @@
 ### Index:
 
 1. Project 1:
-    *Static Website (HTML5)
+    * Static Website (HTML5)
 
 2. Project 2:
-    *To-Do List App (JavaScript)
+    * To-Do List App (JavaScript)
 
 3. Project 3:
-    *Golf Scorecard Project (JavaScript)
+    * Golf Scorecard Project (JavaScript)
 
 4. Project 4:
-    *Banking App (Typescript)
+    * Banking App (Typescript)
 
 5. Project 5:
-    *Golf Scorecard Project (Angular)
+    * Golf Scorecard Project (Angular)
 
 6. Project 8:
-    *Simple User Manager (Node & Express)
+    * Simple User Manager (Node & Express)
