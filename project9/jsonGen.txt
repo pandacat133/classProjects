@@ -1,0 +1,12 @@
+[
+  '{{repeat(10)}}',
+  {
+    firstName: '{{firstName()}}',
+    lastName: '{{surname()}}',
+    emailAddress: '{{email()}}',
+    address: '{{integer(100, 999)}} {{street()}}, {{city()}}, {{state()}}, {{integer(10000, 99999)}}',
+    age: '{{integer(20, 40)}}'
+  }
+]
+
+{firstName: "text", lastName: "text", emailAddress: "text", address: "text", age: "text"}

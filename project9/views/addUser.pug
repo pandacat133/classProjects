@@ -1,0 +1,14 @@
+html
+    head
+        style
+            include style.css
+    body
+        a(href="/") Go Back
+        div
+            form(action="/addUser", method="post")
+                input(placeholder="First Name" type="text" name="firstName")
+                input(placeholder="Last Name" type="text" name="lastName")
+                input(placeholder="Email Address" type="text" name="emailAddress")
+                input(placeholder="Address" type="text" name="address")
+                input(placeholder="Age" type="number" name="age")
+                input(class="submitButton" placeholder="Submit" type="submit")
