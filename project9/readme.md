@@ -1,9 +1,8 @@
 # How to use this project:
 
 1. Start a mongo server.
-
   * In one terminal, run: `mongodb`.
-  * In a different terminal, run `mongo`.
+  * In a different terminal, run: `mongo`.
 2. In a third terminal, cd to the "project9" folder.
   * Run `npm install`.
   * Run `node server`.
