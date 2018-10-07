@@ -2,3 +2,4 @@
 .idea/*
 *.log
 *.xml
+.DS_Store
